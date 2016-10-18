@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="PA1"
+        android:ems="10"
+        android:id="@+id/inputPA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PA2"
+        android:ems="10"
+        android:id="@+id/inputPA2"
+        android:layout_below="@+id/inputPA"
+        android:layout_alignLeft="@id/inputPA"
+        android:layout_alignStart="@id/inputPA"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PA3"
+        android:ems="10"
+        android:id="@+id/inputPA3"
+        android:layout_below="@+id/inputPA2"
+        android:layout_alignLeft="@id/inputPA2"
+        android:layout_alignStart="@id/inputPA2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PA4"
+        android:ems="10"
+        android:id="@+id/inputPA4"
+        android:layout_below="@+id/inputPA3"
+        android:layout_alignLeft="@id/inputPA3"
+        android:layout_alignStart="@id/inputPA3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PB1"
+        android:ems="10"
+        android:id="@+id/inputPB1"
+        android:layout_below="@+id/inputPA4"
+        android:layout_alignLeft="@id/inputPA4"
+        android:layout_alignStart="@id/inputPA4"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PB2"
+        android:ems="10"
+        android:id="@+id/inputPB2"
+        android:layout_below="@+id/inputPB1"
+        android:layout_alignLeft="@id/inputPB1"
+        android:layout_alignStart="@id/inputPB1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PB3"
+        android:ems="10"
+        android:id="@+id/inputPB3"
+        android:layout_below="@+id/inputPB2"
+        android:layout_alignLeft="@id/inputPB2"
+        android:layout_alignStart="@id/inputPB2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="PB4"
+        android:ems="10"
+        android:id="@+id/inputPB4"
+        android:layout_below="@+id/inputPB3"
+        android:layout_alignLeft="@id/inputPB3"
+        android:layout_alignStart="@id/inputPB3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/btnSumbit"
+        android:layout_below="@id/inputPB3"
+        android:layout_toRightOf="@id/inputPB4"
+        android:layout_toEndOf="@id/inputPB4"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/inputPB4"
+        android:layout_alignStart="@+id/inputPB4"
+        android:layout_alignEnd="@+id/btnSumbit"
+        android:layout_alignLeft="@+id/inputPB4"
+        android:layout_alignRight="@+id/btnSumbit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Resu"
+        android:layout_below="@+id/separator"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
